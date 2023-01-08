@@ -28,6 +28,10 @@ double[] ArrayData(int arrNumber, int leftRange, int rightRange)
   return array;
 }
 
+
+
+
+// это часть задачи, для коьорой подходит метод, описанный выше
 void DifferenceNumberArray(double[] arrayEN)
 {
     double max = arrayEN[0];
