@@ -16,37 +16,26 @@ void ShowArray(int[,] array)
 
 int[,] OrderingArray(int[,] arr)
 {
-    int min = 0;
-    int k = 0;
-    int counti = 0;
-    int countj = 0;
-    int temp = 0;
     for (int i = 0; i < arr.GetLength(0); i++)
     {
         for (int j = 0; j < arr.GetLength(1); j++)
         {
-           min = arr[i,j];
-           k = j;
-           while(k < arr.GetLength(1))
-            {
-                if(arr[i,k] < min)
-                {
-                  min = arr[i,k];
-                  counti = i;
-                  countj = k;
-                }
-            k++;
-            }
-           temp = arr[i,j];
-           arr[i,j] = min; 
-           arr[counti,countj] = temp;
-        
+           int max = arr[i,j];
+           int countk = j;
+           int k = j;
+           for(k = j; k < arr.GetLength(1); k++)
+           {
+              if(arr[i,k] > max)
+              {
+                max = arr[i,k];
+                countk = k;
+              }
+           }
+           int temp = arr[i,j];
+           arr[i,j] = max;
+           arr[i,countk] = temp;
         }       
     }
-    System.Console.Write(min);
-    System.Console.WriteLine();
-    System.Console.Write(arr[counti,countj]);
-    System.Console.WriteLine();
     return arr;
 }
 
