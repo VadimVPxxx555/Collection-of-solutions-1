@@ -14,7 +14,7 @@ void ShowMeaning(int[,] array)
             sum += array[j,i];
         }
         sum = sum / array.GetLength(0);
-        Console.Write(sum + ", ");
+        Console.Write(sum + "; ");
     }
 }
 
