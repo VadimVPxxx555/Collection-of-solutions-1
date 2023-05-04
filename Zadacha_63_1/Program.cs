@@ -29,7 +29,7 @@ NumberPlus(count, num);
 // void NumberPlus(int count)
 // {
 //     int num = 1;
-//     if(num < count)
+//     if(num <= count)
 //     {
 //       Console.WriteLine(num);
 //       num++;
