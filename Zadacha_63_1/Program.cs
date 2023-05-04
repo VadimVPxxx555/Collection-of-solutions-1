@@ -33,6 +33,6 @@ NumberPlus(count, num);
 //     {
 //       Console.WriteLine(num);
 //       num++;
+//       NumberPlus(count);
 //     }
-//     NumberPlus(count);
 // }
